@@ -20,6 +20,7 @@
     rubberband
     mlt
     rustup
+    git-absorb
   ];
 
   programs.vscode = {
@@ -31,6 +32,14 @@
       zhuangtongfa.material-theme
 #      tonybaloney.vscode-pets
     ];
+    userSettings = {
+      "_comment" = "This should only be edited at ~/.config/nixpkgs/home.nix.";
+      "workbench.colorTheme" = "Monokai Dimmed";
+      "editor.fontLigatures" = true;
+      "editor.fontFamily" = "'Iosevka'";
+      "editor.fontSize" = 20;
+      "files.autoSave" = "afterDelay";
+    };
   };
 
   programs.git = {
