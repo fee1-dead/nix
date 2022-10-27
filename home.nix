@@ -21,6 +21,9 @@
     mlt
     rustup
     git-absorb
+    python3
+    huggle
+    vlc
   ];
 
   programs.vscode = {
@@ -30,11 +33,16 @@
       rust-lang.rust-analyzer
       ms-vscode-remote.remote-ssh
       zhuangtongfa.material-theme
-#      tonybaloney.vscode-pets
+      eamodio.gitlens
+      usernamehw.errorlens
+      vscodevim.vim
+      vadimcn.vscode-lldb
+      arrterian.nix-env-selector
+      github.copilot
     ];
     userSettings = {
       "_comment" = "This should only be edited at ~/.config/nixpkgs/home.nix.";
-      "workbench.colorTheme" = "Monokai Dimmed";
+      "workbench.colorTheme" = "One Dark Pro Darker";
       "editor.fontLigatures" = true;
       "editor.fontFamily" = "'Iosevka'";
       "editor.fontSize" = 20;
