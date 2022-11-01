@@ -8,6 +8,7 @@
 
   home.sessionVariables = {
     EDITOR = "nvim";
+    MOZ_USE_XINPUT2 = "1";
   };
   home.packages = with pkgs; [
     neovim
@@ -24,6 +25,8 @@
     python3
     huggle
     vlc
+    discord
+    zoom-us
   ];
 
   programs.vscode = {
@@ -39,6 +42,8 @@
       vadimcn.vscode-lldb
       arrterian.nix-env-selector
       github.copilot
+      ms-vscode.cpptools
+      formulahendry.code-runner
     ];
     userSettings = {
       "_comment" = "This should only be edited at ~/.config/nixpkgs/home.nix.";
@@ -47,6 +52,7 @@
       "editor.fontFamily" = "'Iosevka'";
       "editor.fontSize" = 20;
       "files.autoSave" = "afterDelay";
+      "editor.inlineSuggest.enabled" = true;
     };
   };
 
