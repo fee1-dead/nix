@@ -26,7 +26,6 @@
     huggle
     vlc
     discord
-    zoom-us
   ];
 
   programs.vscode = {
@@ -44,6 +43,7 @@
       github.copilot
       ms-vscode.cpptools
       formulahendry.code-runner
+      WakaTime.vscode-wakatime
     ];
     userSettings = {
       "_comment" = "This should only be edited at ~/.config/nixpkgs/home.nix.";
@@ -53,6 +53,9 @@
       "editor.fontSize" = 20;
       "files.autoSave" = "afterDelay";
       "editor.inlineSuggest.enabled" = true;
+      "code-runner.runInTerminal" = true;
+      "rust-analyzer.imports.granularity.enforce" = true;
+      "rust-analyzer.imports.granularity.group" = "module";
     };
   };
 
