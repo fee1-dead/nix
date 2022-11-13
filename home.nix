@@ -26,6 +26,8 @@
     huggle
     vlc
     discord
+    betterdiscordctl
+    zoom-us
   ];
 
   programs.vscode = {
@@ -44,6 +46,7 @@
       ms-vscode.cpptools
       formulahendry.code-runner
       WakaTime.vscode-wakatime
+      ms-vsliveshare.vsliveshare
     ];
     userSettings = {
       "_comment" = "This should only be edited at ~/.config/nixpkgs/home.nix.";
