@@ -28,6 +28,7 @@
     discord
     betterdiscordctl
     zoom-us
+    huggle
   ];
 
   programs.vscode = {
