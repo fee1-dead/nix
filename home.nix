@@ -11,7 +11,6 @@
     MOZ_USE_XINPUT2 = "1";
   };
   home.packages = with pkgs; [
-    neovim
     iosevka
     wget
     rnix-lsp
@@ -29,6 +28,10 @@
     betterdiscordctl
     zoom-us
     huggle
+    prismlauncher
+    layan-kde
+    layan-gtk-theme
+    libsForQt5.qtstyleplugin-kvantum
   ];
 
   programs.vscode = {
@@ -67,6 +70,11 @@
     enable = true;
     userName = "Deadbeef";
     userEmail = "ent3rm4n@gmail.com";
+  };
+
+  programs.neovim = {
+    enable = true;
+    plugins = with pkgs.vimPlugins; [vim-nix];
   };
 
   programs.zsh = {

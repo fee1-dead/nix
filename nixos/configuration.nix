@@ -146,7 +146,7 @@
   # tuna mirror
   nix.settings = {
 	auto-optimise-store = true;
-	substituters = [ "https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store" ];
+#	substituters = [ "https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store" ];
 	experimental-features = [ "nix-command" "flakes "];
   };
 
